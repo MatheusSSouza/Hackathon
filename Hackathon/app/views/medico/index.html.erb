@@ -1,0 +1,19 @@
+<html>
+<h1>Itens#index</h1>
+
+<%# link_to 'New Item', new_item_path %>
+
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Notes</th>
+    </tr>
+    <br>
+    <% @medic.each do |item| %>
+        <tr>
+            <td><%= item.crm %></td>
+            <td><%= item.senha %></td><br>
+        </tr>
+    <% end %>
+</table>
+</html>

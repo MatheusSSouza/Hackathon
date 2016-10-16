@@ -3,6 +3,10 @@ class ConsultaController < ApplicationController
         
     end
     
+    def currentTime 
+        return (Time.new - 7200).ctime
+    end
+
     def cliente(cpf=nil)
     
     end
