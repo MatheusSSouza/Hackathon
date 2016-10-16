@@ -3,5 +3,9 @@ class ConsultaController < ApplicationController
         
     end
     
+    def cliente(cpf=nil)
+    
+    end
+    
     
 end
