@@ -25,7 +25,11 @@ def check_cpf(cpf=nil)
   return false # CPF inválido
 end
 
-String c = "01730236227"
-puts check_cpf(c)
+String cpf = "01730236227"
+String sintomas;
+String historia;
+String medicacao;
+#Exames #*#
+
 
 puts currentTime
