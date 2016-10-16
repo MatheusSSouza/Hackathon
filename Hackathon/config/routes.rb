@@ -3,6 +3,10 @@ Rails.application.routes.draw do
   get 'consulta/index'
   get 'consulta/cliente' => 'consulta#cliente'
   get 'medico/index'
+  get 'paciente/index'
+  get 'paciente/login'
+  
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -10,6 +14,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
 
+  
+
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -1,0 +1,90 @@
+<!--<h1>Home#index</h1> 
+<p>Find me in app/views/home/index.html.erb</p><br>
+<p>Trabalhe Alex</p>
+<a href="/consulta/index">GO</a>
+-->    
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="#">Uwell</a>
+        <ul class="nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Planos</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href ="/home/index">Log out</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <style>
+        .center {
+          text-align: center;
+            margin: auto;
+            width: 70%;
+        }
+        </style>
+        
+    <div class="center">
+      <%
+      @pacientes.each do |p|
+        %>
+            <%=p.cpf%>
+            <%
+            if(p.cfp == '01730236227')
+                @logado = p
+            end
+        end
+      %>
+      <b>CPF:</b> 01730236227<br>
+      <b>Nome:</b> Matheus Souza<br>
+      <b>Data de Nascimento:</b> 08/09/1995<br>
+      <b>UF:</b> SP &ensp;&ensp;&ensp; <b>Cidade:</b> Sao Paulo<br>
+      <b>Email:</b> mathuessouza@gmail.com<br>
+      <b>Telefone:</b> 11984445556<br>
+      <b>Tipo Sanguineo:</b> +A<br>
+      <b>Peso:</b> 65 &ensp; <b>Altura:</b> 1.68 &ensp; <b>IMC:</b> 23.0<br>
+      <b>Historico Familiar:</b> Avô e mãe tem pressão alta.<br>
+      <b>Historico Pessoal:</b> Não passou por nenhuma cirurgia. Alergia a abelhas. Nunca recebeu transfusão de sangue.<br>
+      <b>Medicão em Uso:</b> Doplamirine 50mg 4 veses por dia duraante duas semanas. <br>
+      Flamitinine 2 compromidos de 12 em 12 horas por um mes.<br>
+      &nbsp;
+      
+        
+    <a class = "Exames" href="/paciente/index">
+    <p class="submit">
+        
+        <input type="submit" accesskey="s" value="Exames">
+        
+      
+    </a>
+    <a class = "HC" href="/paciente/index">
+    <p class="submit">
+        
+        <input type="submit" accesskey="s" value="Historico de Consultas">
+        
+       
+    
+    </a>
+    <a class = "Dependentes" href="/paciente/index">
+    <p class="submit">
+        
+        <input type="submit" accesskey="s" value="Dependentes">
+        
+       
+    
+    </a>
+    </div>
+    
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+    
+   

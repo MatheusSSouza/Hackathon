@@ -9,6 +9,7 @@ class CreateConsulta < ActiveRecord::Migration
         t.string :exames
         t.time :data_hora
         t.string :hospital
+        t.string :diagnostico
         
       t.timestamps null: false
     end

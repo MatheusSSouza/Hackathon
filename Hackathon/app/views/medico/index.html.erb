@@ -1,19 +1,19 @@
 <html>
-<h1>Itens#index</h1>
+<h1>Ola medico</h1>
+    <p class="form-field  first_name pd-text required    ">
 
-<%# link_to 'New Item', new_item_path %>
+        <label class="field-label" for="186122_3283pi_186122_3283">CPF do Paciente</label>
 
-<table>
-    <tr>
-        <th>Title</th>
-        <th>Notes</th>
-    </tr>
-    <br>
-    <% @medic.each do |item| %>
-        <tr>
-            <td><%= item.crm %></td>
-            <td><%= item.senha %></td><br>
-        </tr>
-    <% end %>
-</table>
+
+        <input type="text" name="186122_3283pi_186122_3283" id="186122_3283pi_186122_3283" 
+        value="" class="text" size="30" maxlength="40" onchange="">
+        
+
+    </p>
+    <a class = "look" href="/paciente/index">
+    <p class="look">
+        
+        <input type="look" accesskey="l" value="Buscar">
+    </p>
+
 </html>

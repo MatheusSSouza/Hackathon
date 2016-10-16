@@ -16,6 +16,9 @@ class CreatePacientes < ActiveRecord::Migration
       t.string :historico_pessoal
       t.string :medicacao_em_uso
       t.string :medicacao_prescritas
+      t.string :telefone_emergencia
+      t.string :lougradouro
+      t.string :cep
       t.string :cpf_dependente1
       t.string :cpf_dependente2
       t.string :cpf_dependente3
